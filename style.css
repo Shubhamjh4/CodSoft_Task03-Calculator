@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+}
+
+.calc-container {
+    background-color: black;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    width: 300px; /* Width can be adjusted */
+    height: 420px; /* Increased height for a rectangular look */
+}
+
+.calc-display {
+    width: 100%;
+    height: 50px; /* Increased height */
+    font-size: 24px;
+    text-align: right;
+    margin-bottom: 10px;
+    border: 1px solid #d4d4d4;
+    border-radius: 5px;
+    padding: 2px 1px;
+    background-color: rgb(207, 205, 205);
+}
+
+.calc-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.calc-buttons button {
+    padding: 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(255, 166, 0);
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.calc-buttons button:hover {
+    background-color: rgb(241, 190, 95);
+}
